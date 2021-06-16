@@ -10,7 +10,7 @@ pipeline {
     }
     post {
         always {
-            mail bcc: '', body: 'Successfullt tested email notification via jenakins', cc: '', from: '', replyTo: '', subject: 'Test email by Akash via Jenkins', to: 'akashsangle377@gmail.com'
+            mail bcc: '', body: 'Successfullt tested email notification via jenakins', cc: '', from: '', replyTo: '', subject: 'Test email via Jenkins', to: 'akashsangle377@gmail.com'
             
         }
     }
