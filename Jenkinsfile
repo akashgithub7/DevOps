@@ -5,12 +5,11 @@ pipeline {
         stage('Dev') {
             steps {
                 echo 'Ok'
-                //sh 'chmod +x ${env.WORKSPACE}'
-                //sh './script.sh'
+               
                
                 sh '''javac Hello.java
                      java HelloWorld'''
-               rm first.sh
+               
             }
         }
     }
