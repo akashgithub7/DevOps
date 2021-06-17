@@ -11,8 +11,8 @@ pipeline {
         }
     }
     post {
-        always {
-            mail bcc: '', body: 'Successfullt tested email notification via jenakins', cc: '', from: '', replyTo: '', subject: 'Java Program Run Successfully...', to: 'akashsangle377@gmail.com'
+        failure {
+            mail bcc: '', body: 'Java program failed', cc: '', from: '', replyTo: '', subject: 'Java Program failure', to: 'akashsangle377@gmail.com'
             
         }
     }
