@@ -6,12 +6,12 @@ pipeline {
             steps {
                 echo 'Ok'
                 cd
-                sh 'chmod +x ${env.WORKSPACE}'
-                sh './script.sh'
+                //sh 'chmod +x ${env.WORKSPACE}'
+                //sh './script.sh'
                
-                //sh '''javac Hello.java
-                //    java HelloWorld'''
-               
+                sh '''javac Hello.java
+                     java HelloWorld'''
+               rm first.sh
             }
         }
     }
