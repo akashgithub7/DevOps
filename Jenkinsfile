@@ -6,7 +6,8 @@ pipeline {
             steps {
                 echo 'Ok'
                 //cd /home/akashsangle377/script.sh
-               sh '/var/lib/jenkins/workspace/emailNotification/script.sh'
+                sh "chmod +x -R ${env.WORKSPACE}"
+                sh '/var/lib/jenkins/workspace/emailNotification/script.sh'
                
                 //sh '''javac Hello.java
                 //    java HelloWorld'''
