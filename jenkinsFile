@@ -5,14 +5,17 @@ pipeline {
         stage('Dev') {
             steps {
                 echo 'Ok'
-                sh 'chmod +x script.sh'
+                sh 'chmod +x ./script.sh'
                 sh './script.sh'
             }
         }
     }
     post {
         failure {
-            mail bcc: '', body: 'Java program failed', cc: '', from: '', replyTo: '', subject: 'Java Program failure', to: 'akashsangle377@gmail.com'
+            mail bcc: '', body: 'Java program failed', cc: '', from: '', replyTo: '', subject: 'Java Program failure', to: 'akashsangle377@gmail.com'   
+        }
+        success {
+            mail bcc: '', body: 'Java program success', cc: '', from: '', replyTo: '', subject: 'Java Program success', to: 'akashsangle377@gmail.com'
             
         }
     }
