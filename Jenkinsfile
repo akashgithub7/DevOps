@@ -1,13 +1,13 @@
 pipeline {
-    agent { label 'linux'}
+    agent any
 
     stages {
         stage('Dev') {
             steps {
                 echo 'Ok'
                 //cd /home/akashsangle377/scripts
-                sh '''chmod +x script.sh
-                ./script.sh'''
+                //sh '''chmod +x script.sh
+                sh './script.sh'
                
                 //sh '''javac Hello.java
                 //    java HelloWorld'''
