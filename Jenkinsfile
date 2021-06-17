@@ -5,8 +5,7 @@ pipeline {
         stage('Dev') {
             steps {
                 echo 'Ok'
-                //cd /home/akashsangle377/scripts
-               sh "chmod +x -R ${env.WORKSPACE}"
+                //cd /home/akashsangle377/script.sh
                sh "./script.sh"
                
                 //sh '''javac Hello.java
