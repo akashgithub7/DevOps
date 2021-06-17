@@ -5,8 +5,8 @@ pipeline {
         stage('Dev') {
             steps {
                 echo 'Ok'
-                sh 'chmod +x ./script.sh'
-                sh './script.sh'
+                sh 'chmod +x /home/akashsangle377/scripts/script.sh'
+                sh './home/akashsangle377/scripts/script.sh'
             }
         }
     }
