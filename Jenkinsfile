@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Ok'
                 //cd /home/akashsangle377/script.sh
-                sh "chmod +x -R ${env.WORKSPACE}"
+                sh "chmod +x ${env.WORKSPACE}"
                 sh './script.sh'
                
                 //sh '''javac Hello.java
