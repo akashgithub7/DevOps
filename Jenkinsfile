@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Ok'
                 //cd /home/akashsangle377/script.sh
-               sh "./script.sh"
+               sh '/var/lib/jenkins/workspace/emailNotification/script.sh'
                
                 //sh '''javac Hello.java
                 //    java HelloWorld'''
